@@ -14,48 +14,41 @@
   <body>
     <!-- BEGIN content -->
     <div class="out">
-      <h1>Index page</h1>
-      <p>Hello from partials/_header.html</p>
-      <svg class="icon icon-facebook">
-        <use xlink:href="img/sprite.svg#icon-facebook"></use>
-      </svg>
-      <p>
-        <!-- begin input -->
-        <label class="checkbox">
-          <input type="checkbox" name="checkbox">
-          <span class="checkbox__text">checkbox</span>
-        </label>
-        <!-- end input -->
-      </p>
-      <p>
-        <!-- begin input -->
-        <label class="checkbox">
-          <input type="checkbox" name="exemple-name" checked>
-          <span class="checkbox__text">checkbox-checked</span>
-        </label>
-        <!-- end input -->
-      </p>
-      <!-- begin input -->
-      <label class="radio">
-        <input type="radio" name="exemple-name">
-        <span class="radio__text">text</span>
-      </label>
-      <!-- end input -->
-      <!-- begin breadcrumbs -->
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__item">
-          <a href="#">Главная</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <a href="#">Внутренняя</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <span>Корзина</span>
-        </li>
-      </ul>
-      <!-- end breadcrumbs -->
-      <li>Item1</li>
-      <li>Item2</li>
+      <!-- begin header -->
+      <header class="header" style="background-image: url(https://picsum.photos/1900/300);">
+      </header>
+      <!-- end header -->
+      <!-- begin main -->
+      <div class="main">
+        <div class="main__inner inner">
+          <h1 class="title">Hi,You are using Abi2Api</h1>
+          <p>It's a simple service that make blockchain usage more easily</p>
+          <!-- begin search -->
+          <div class="search">
+            <div class="search__decription">Put your contract address below </div>
+            <form action="/" class="search__form">
+              <div class="search__control">
+                <input type="text" placeholder="Search">
+              </div>
+              <button class="search__btn btn" type="submit">Submit</button>
+            </form>
+            <div class="search__field"></div>
+          </div>
+          <!-- end search -->
+        </div>
+      </div>
+      <!-- end main -->
+      <!-- begin footer -->
+      <footer class="footer">
+        <div class="footer__inner inner">
+          <a href="#" class="footer__logo">
+            <img src="https://static.tildacdn.com/tild3861-6663-4332-a664-343231636134/logo-navbar-white.png" alt="logo">
+          </a>
+          <div class="footer__field"> Powered by <a href="#" class="footer__link">jury.online</a>
+          </div>
+        </div>
+      </footer>
+      <!-- end footer -->
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->
