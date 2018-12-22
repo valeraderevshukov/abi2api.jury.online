@@ -1,0 +1,24 @@
+.footer
+	padding: 90px 0
+	color: $white
+	text-align: center
+	background-color: $black 
+	+md
+		padding: 60px 0
+	+sm
+		padding: 50px 0
+	&__logo
+		max-width: 300px 
+		vertical-align: top
+		display: inline-block
+		img
+			max-width: 100%
+			display: block
+	&__field
+		margin-top: 30px
+	&__link
+		color: $white
+		transition: border-color .3s
+		border-bottom: 1px solid transparent
+		+hover
+			border-color: currentColor 

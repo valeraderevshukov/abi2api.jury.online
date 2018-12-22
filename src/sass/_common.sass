@@ -1,4 +1,23 @@
 body
-	background: #FFF
+	min-width: 320px
+	font-family: $sourcecodepro 
+	+f(22px,300,1.4)
+	+font-smoothing 
+	background: $white
 	line-height: 1.4
+	+md
+		font-size: 18px
+	+sm
+		font-size: 16px
 
+
+.title
+	margin-bottom: 15px
+	+f(62px,600,1.2)
+	+md
+		font-size: 52px
+	+sm
+		font-size: 38px
+
+p + p
+	margin-top: 10px

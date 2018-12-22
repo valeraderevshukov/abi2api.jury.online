@@ -1,0 +1,54 @@
+.search
+	&:not(:first-child)
+		margin-top: 20px
+	&__decription
+		font-size: 24px
+		+md
+			font-size: 20px
+		+sm
+			font-size: 17px
+	&__form
+		display: flex
+		&:not(:first-child)
+			margin-top: 10px
+	&__control
+		flex-grow: 1
+		input
+			padding: 10px 15px
+			width: 100%
+			height: 60px
+			font-family: $sourcecodepro
+			font-size: inherit
+			border: 1px solid #D1D1D1 
+			&:focus
+				&::placeholder
+					font-size: 0
+	&__btn
+		+sm
+			min-width: 150px
+	&__field
+		padding: 15px
+		min-height: 400px
+		text-align: left
+		+prevent-text
+		border: 1px solid #D1D1D1 
+		+md
+			min-height: 300px
+		+sm
+			min-height: 200px
+		&:not(:first-child)
+			margin-top: 30px
+
+.btn
+	padding: 20px 30px
+	min-width: 230px
+	font-family: $sourcecodepro
+	+f(16px,700,1.3)
+	color: $white 
+	text-align: center
+	user-select: none
+	transition: background-color .3s ease-in-out
+	background-color: $black 
+	display: inline-block
+	+hover
+		background-color: lighten($black, 20%)
